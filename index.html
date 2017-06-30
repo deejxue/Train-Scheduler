@@ -1,0 +1,90 @@
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Train Scheduler</title>
+    
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- Local Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
+  </head>  
+  
+<body>
+  <div class="container">
+    <div class="jumbotron" id="main-heading">
+      <h1>Niles Railways Train Schedules.... ALL ABOARD!!</h1>
+      <br>      
+      <p>Arrivals and departures to the minute</p>
+    </div>
+       
+  <div class="panel panel-default" id="train-table">
+    <div class="panel-heading" id="trains-head">Current Trains</div>
+
+    <table class="table" id="trainTable">
+      <thead>
+        <tr>
+          <th>Train Name</th>
+          <th>Destination</th>
+          <th>Frequency (Mins)</th>
+          <th>Arriving Next</th>
+          <th>Minutes Away</th>
+        </tr>
+      <thead>
+      <tbody>
+      </tbody>
+    </table>
+
+  </div>
+
+  
+  <div class="panel panel-default" id="add-train">
+  <div class="panel-heading" id="add-train-head">Add Train</div>
+
+  <form id="userForm">
+    <div class="form-group">
+      <label for="name">Train Name:</label>
+      <input type="text" class="form-control" id="train-name-input">
+    </div>
+
+    <div class="form-group">
+      <label for="destination">Destination</label>
+      <input type="text" class="form-control" id="destination-input">
+    </div>
+
+    <div class="form-group">
+      <label for ="first-train">First Train time (HH:mm - 24 hour clock)</label>
+      <input type="text" class ="form-control" id="first-train-input" > 
+    </div>
+    
+     <div class="form-group">
+      <label for ="frequency">Frequency (Mins)</label>
+      <input type="text" class ="form-control" id="frequency-input" > 
+    </div>
+
+    <button type="submit" class="btn btn-default btn-danger" id="add-train">Submit</button>
+    </form>
+
+    </div>
+    
+    
+
+</div>
+
+<!-- <div></div> -->
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Bootstrap loading -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Firebase Reference -->
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+<!-- Moments JS link -->
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+<!-- My js script loads last -->
+<script src="js/train.js"></script>
+
+
+</body>
+</html> 
